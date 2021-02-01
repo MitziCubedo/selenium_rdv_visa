@@ -29,7 +29,7 @@ while True:
     browser = webdriver.Chrome(ChromeDriverManager().install())
     # Open the webpage
     try:
-        browser.get('http://www.meurthe-et-moselle.gouv.fr/booking/create/22259')
+        browser.get('https://www.val-de-marne.gouv.fr/booking/create/4963')
         # Save the window opener (current window, do not mistaken with tab... not the same)
         main_window = browser.current_window_handle
         # Accepter les cookies
@@ -43,7 +43,7 @@ while True:
 
         ################################################## Fill all the second form
         # Click in the radio button "Prendre un rendez-vous pour un renouvellement de titre..."
-        browser.find_element_by_xpath("//input[@id='planning22263']").click()
+        browser.find_element_by_xpath("//input[@id='planning5955']").click()
         # Click in the submit button
         browser.find_element_by_xpath("//input[@type='submit']").click()
         ##################################################
